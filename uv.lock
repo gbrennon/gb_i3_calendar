@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "forging-blocks"
+version = "0.3.22"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/13/987d443ad075d6fa876672d75cf37ec15c0fd74875f9bd0e2ff10a57965d/forging_blocks-0.3.22.tar.gz", hash = "sha256:5651dc867a4fb0742fa3abf0622ed0b1592c4e2ffc59bb583bdd014d220a0e29", size = 29883, upload-time = "2026-03-24T04:17:15.19Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/12/dd/afe418acf113d41e76348f9727363a341423749a4035ba1a3d98b6750949/forging_blocks-0.3.22-py3-none-any.whl", hash = "sha256:f584b7f27781caaa3b7fccd6b0d0365ec7138a9356f5cc0a1746827299f4d519", size = 45234, upload-time = "2026-03-24T04:17:13.626Z" },
+]
+
+[[package]]
+name = "i3-calendar"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "forging-blocks" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "forging-blocks", specifier = ">=0.3.21" }]
